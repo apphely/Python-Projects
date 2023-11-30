@@ -1,9 +1,11 @@
+# .webp uzantılı görslleri sıkıştırarak alandan tasarruf sağlayabilirsiniz. Web siteleri için birebir.
+
 from PIL import Image
 import os
 
 # Klasördeki tüm dosyaları listele
-klasor_yolu = "x:\.Çalışmalarım ve Projelerim\Kodlama\Python Projeler\WebP Dönüştürme ve Sıkıştırma/"  # Webp dosyalarının bulunduğu klasörün yolu
-hedef_kalite = 20  # %20 sıkıştırma kalitesi
+klasor_yolu = "x:\WebP Sıkıştırma/"  # Webp dosyalarının bulunduğu klasörün yolu
+hedef_kalite = 50  # Sıkıştırma kalitesi
 
 # Klasördeki tüm dosyaları al
 dosyalar = os.listdir(klasor_yolu)
@@ -19,4 +21,4 @@ for dosya_adı in dosyalar:
         # Kaliteyi ayarla ve kaydet
         im.save(dosya_yolu, "webp", quality=hedef_kalite)
 
-print("Webp dosyaları %20 kalitesinde sıkıştırıldı.")
+print("Webp dosyaları sıkıştırıldı.")
