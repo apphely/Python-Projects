@@ -1,8 +1,9 @@
+# Belirlediğiniz bir klasördeki istemediğiniz uzantıya ship bütün dosyaları silebileceğiniz bir python kodu.
 import os
 
 # Kullanıcıdan klasör adını ve silmek istediği dosya uzantısını al
 dir_name = input("Lütfen klasör adını girin: ")
-file_extension = input("Silmek istediğiniz dosya uzantısını girin (örn. zip/opf): ")
+file_extension = input("Silmek istediğiniz dosya uzantısını girin (örn: zip/opf): ")
 
 # Kullanıcının girdiği klasör adını kontrol et
 if not os.path.exists(dir_name):
