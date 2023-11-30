@@ -1,3 +1,5 @@
+#Belirlediğiniz klasördeki dosyaların içinden arama yapmanızı sağlar.
+
 import os
 
 while True:
